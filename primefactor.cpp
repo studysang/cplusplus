@@ -76,6 +76,7 @@ int main(){
         }
     }
     //print prime number
+    //
     for(auto i = prime.begin();i !=prime.end(); ++i);
         //cout<< *i<<endl;
     //print prime factor 
