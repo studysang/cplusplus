@@ -1,0 +1,29 @@
+How to use functor
+
+functor is pointer of function
+we can use it as follows
+void my_functor_function(int x, int y)
+{
+  sum = x + y;
+}
+main()
+{
+  void (*functor)(int)(int) = &my_functor_function;
+  functor(10, 20);
+}
+
+why we have to use it because it is easy to handle more informational parameters that we need
+for example,
+class wow
+{
+public:
+  wow(){};
+  wow~(){};
+  int operator + (int x, int y) const{
+  return sum = x + y;
+  }
+};
+int main()
+{
+  my_fuction(x,wow(y)); // here wow operator calls on object of wow
+}
